@@ -15,7 +15,7 @@ namespace Petshop.MVC
 
             builder.Services.AddDataAccessLayerServices(builder.Configuration);
             builder.Services.AddBussinessLogicLayerServices();
-
+            builder.Services.AddHttpContextAccessor();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

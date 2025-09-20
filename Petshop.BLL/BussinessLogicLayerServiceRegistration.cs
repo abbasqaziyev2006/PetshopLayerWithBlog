@@ -19,6 +19,8 @@ public static class BussinessLogicLayerServiceRegistration
         services.AddScoped<IShopService, ShopManager>();
         services.AddScoped<IReviewService, ReviewManager>();
         services.AddScoped<IBlogService, BlogManager>();
+        services.AddScoped<IBioService, BioManager>();
+        services.AddScoped<ISocialService, SocialManager>();
         services.AddScoped<FileService>();
         services.AddScoped<WishlistManager>();
         services.AddScoped<BasketManager>();
